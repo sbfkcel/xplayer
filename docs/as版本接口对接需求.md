@@ -93,7 +93,7 @@ onProgress              #返回一个回调参数，视频数据正在下载中�
 #### 示例：
 ```javascript
 onProgress = function(bufferedTime){
-    console.log(buffered);   //已缓冲文件的可播放时间
+    console.log(bufferedTime);   //已缓冲文件的可播放时间
 };
 ```
 
