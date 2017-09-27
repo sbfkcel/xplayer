@@ -110,7 +110,22 @@ onTimeUpdate = function(currentTime){
 };
 ```
 
-### 2.13 发送弹幕
+### 2.13 事件onError
+
+```bash
+onError                 #返回一个回调参数对象，当出现错误或异常时触发
+```
+
+#### 示例：
+```javascript
+onError = function(obj){
+    //obj.code  错误代码，404）文件不存在  605）网络错误
+    //obj.msg   错误提示文字
+    console.log(currentTime);   //当前播放时间
+};
+```
+
+### 2.14 发送弹幕
 ```bash
 danmakuSend             #传入一个对象（示例：见下），往播放器发送一条弹幕
                         # text [必选] 弹幕文字
@@ -130,13 +145,13 @@ danmakuSend({
         fontSize:'20px',
         fontFamily:'Microsoft YaHei',
         color:'#fff000',
-        textShadow:'-1px -1px #000, -1px 1px #000, 1px -1px #000, 1px 1px #000',
-        border:'1px solid #337ab7'
+        borderWidth:'1px',
+        borderColor:'#337ab7'
     }
 });
 ```
 
-### 2.14 设置弹幕数据
+### 2.15 设置弹幕数据
 
 如果该方法有传入数据，并且没有关闭弹幕功能的情况下，播放器则需要显示弹幕。
 ```bash
@@ -185,7 +200,7 @@ setDanmakuData([
 完整的评论数据参照：`http://vod.4399sy.com/service/video/getComments?video_id=91&callback=cb`
 
 
-### 2.15 弹幕开关
+### 2.16 弹幕开关
 
 用于设置弹幕开关和获取弹幕功能关闭与否
 
@@ -193,7 +208,7 @@ setDanmakuData([
 danmakuSwitch           #传入boolean，开启&关闭弹幕，（true开启，false关闭）
 ```
 
-### 2.16 获取弹幕开关
+### 2.17 获取弹幕开关
 
 ```bash
 getDanmakuSwitchStatus  #返回boolean，获取弹幕开关状态
