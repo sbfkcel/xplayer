@@ -142,10 +142,10 @@ danmakuSend({
     text:'弹幕内容',
     time:223.3,
     style:{
-        fontSize:'20px',
+        fontSize:20,
         fontFamily:'Microsoft YaHei',
         color:'#fff000',
-        borderWidth:'1px',
+        borderWidth:1,
         borderColor:'#337ab7'
     }
 });
