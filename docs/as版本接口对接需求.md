@@ -140,7 +140,6 @@ danmakuSend             #传入一个对象（示例：见下），往播放器�
 ```javascript
 danmakuSend({
     text:'弹幕内容',
-    time:223.3,
     style:{
         fontSize:20,
         fontFamily:'Microsoft YaHei',
@@ -149,34 +148,6 @@ danmakuSend({
         borderColor:'#337ab7'
     }
 });
-```
-
-### 2.15 设置弹幕数据
-
-如果该方法有传入数据，并且没有关闭弹幕功能的情况下，播放器则需要显示弹幕。
-```bash
-setDanmakuData          #传入一个数组（示例：见下）用于设置弹幕数据
-```
-
-#### 示例：
-
-```javascript
-setDanmakuData([
-    {
-        "comment_id":"3908",
-        "video_id":"91",
-        "user_id":"0",
-        "ip":null,
-        "content":"\u7ecf\u9a8c\u662f\u5403\u7684\u5417\uff1f",
-        "video_time":117,
-        "comment_time":1485399106,
-        "color":"",
-        "size":"0",
-        "position":"0",
-        "state":0
-    },
-    ...
-]);
 ```
 
 #### 弹幕数据说明
