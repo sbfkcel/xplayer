@@ -129,10 +129,7 @@ onError = function(obj){
 ```bash
 danmakuSend             #传入一个对象（示例：见下），往播放器发送一条弹幕
                         # text [必选] 弹幕文字
-                        # time [可选] 如果没有则是发送时的时间
                         # style [可选] 文字样式，如果有则会覆盖弹幕默认的样式
-                        # style.textShadow [可选] 在h5中用于控制字体的描边用的，flash中可以忽略
-                        # style.border [可选] 为弹幕的边框，通常用于自己发送的弹幕高亮显示
 ```
 
 #### 示例：
@@ -141,7 +138,7 @@ danmakuSend             #传入一个对象（示例：见下），往播放器�
 danmakuSend({
     text:'弹幕内容',
     style:{
-        fontSize:20,
+        fontSize:24,
         fontFamily:'Microsoft YaHei',
         color:'#fff000',
         borderWidth:1,
